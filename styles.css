@@ -1,0 +1,200 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light Gray */
+}
+
+header {
+    background-color: #87CEEB; /* Sky Blue */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px; /* Adjust size as needed */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue */
+}
+
+.advertisement {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.advertisement h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.advertisement-item {
+    padding: 10px;
+    background-color: #f8f9fa; /* Light Gray */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.advertisement-item h3 {
+    font-size: 18px;
+    color: #333; /* Dark Gray */
+    margin-bottom: 5px;
+}
+
+.advertisement-item p {
+    font-size: 14px;
+    color: #666; /* Gray */
+    margin-bottom: 5px;
+}
+/* Add styles for navigation buttons */
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #007bff; /* Blue */
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Adjust padding for advertisement items */
+/* Add transition for sliding animation */
+.advertisement-container {
+    position: relative;
+    width: 100%; /* Ensure full width for sliding */
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Add transition for smooth sliding */
+}
+
+/* Add styles for navigation buttons */
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #007bff; /* Blue */
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Adjust padding for advertisement items */
+/* Add transition for sliding animation */
+.advertisement-container {
+    position: relative;
+    width: 100%; /* Ensure full width for sliding */
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Add transition for smooth sliding */
+}
+
+.advertisement-item {
+    flex: 0 0 100%; /* Ensure each item takes full width */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light Gray */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out; /* Add transition for fading effect */
+    opacity: 1; /* Initially visible */
+}
+
+.advertisement-item:not(.active) {
+    opacity: 0; /* Hide inactive items */
+}
+
+
